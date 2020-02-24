@@ -21,6 +21,9 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+
+    --bs: .25em .25em .75em rgba(0,0,0,.80),
+        .125em .125em .25em rgba(0,0,0,.80);
 }
 
 @media (min-width: 800px) {
@@ -45,7 +48,6 @@ body {
 
 section {
     padding: 4em 1.65em;
-    border: 1px solid black;
 }
 
 img {
@@ -86,6 +88,7 @@ h3 { font-size: var(--fs-h3);}
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
+    padding: .25em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
@@ -98,6 +101,10 @@ nav { display: none;}
 
 .intro {
     position: relative;
+}
+
+.intro__img {
+    box-shadow: var(--bs);
 }
 
 @media (min-width: 600px) {
@@ -115,6 +122,8 @@ nav { display: none;}
     .intro__img {
         grid-area: img;
         min-width: 250px;
+        position: relative;
+        z-index: 2;
     }
 
     .section__subtitle--intro {
@@ -122,5 +131,8 @@ nav { display: none;}
         grid-column: -1 / 1;
         grid-row: 2;
         text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
     }
 }
