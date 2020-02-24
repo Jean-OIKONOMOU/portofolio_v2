@@ -8,7 +8,7 @@
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
-    --f-secondary: 'Source Code Pro', monospace;
+    --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -43,6 +43,11 @@ body {
     line-height: 1.6;
 }
 
+section {
+    padding: 4em 1.65em;
+    border: 1px solid black;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -50,13 +55,72 @@ img {
 
 /* TYPEOGRAPHY */
 
+.section__title--intro span { 
+    font-weight: var(--fw-bold);
+    display: block;
+}
+
 h1, h2, h3 {
-    line-height: 1.2;
-    margin: .3rem 0;
+    line-height: 1.05;
+    margin: 0;
+
 }
 
 h1 { font-size: var(--fs-h1);}
 h2 { font-size: var(--fs-h2);}
 h3 { font-size: var(--fs-h3);}
 
+.section__title {
+    margin-bottom: .25em;
+}
 
+.section__title--intro {
+    font-weight: var(--fw-reg);
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+/* HEADER */
+
+nav { display: none;}
+
+/* INTRO SECTION */
+
+.intro {
+    position: relative;
+}
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro__img {
+        grid-area: img;
+        min-width: 250px;
+    }
+
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+    }
+}
