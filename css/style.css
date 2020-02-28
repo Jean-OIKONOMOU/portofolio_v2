@@ -71,10 +71,9 @@ img {
 }
 
 .btn { 
-    margin-top: 1.5em;
+    /* margin-top: 1.5em; */
     display: inline-block;
-    /* padding: .5em 1.5em; */
-    padding: 7px 22px;
+    padding: 7px 30px;
     background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
@@ -98,8 +97,8 @@ img {
 
 .btn:hover {
     transform: rotate(0) translateZ(0) scale(1.1);
-    /* transform: translateZ(1px);
-    transform: perspective(20px); */
+    outline: 2px solid var(--clr-accent);
+    outline-offset: 3px;
     border: transparent !important;
 }
 
@@ -225,7 +224,8 @@ nav { display: none;}
     .services {
         display: flex;
         flex-direction: row;
-        margin: 0 auto;
+        margin: 0 auto 2em auto;
+
     }
         
     .service:nth-child(1) {
