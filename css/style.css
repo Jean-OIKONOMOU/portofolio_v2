@@ -14,7 +14,7 @@
     --fw-bold: 900;
 
     --clr-light: #ffffff;
-    --clr-dark: #303030;
+    --clr-dark: #1d1c19;
     --clr-accent: #16e0bd;
 
     --fs-h1: 3rem;
@@ -38,8 +38,8 @@
 /* GENERAL STYLES */
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-light) ;
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -134,5 +134,65 @@ nav { display: none;}
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+    }
+}
+
+/* MY SERVICES SECTION */
+
+.my-services {
+    background-color: #696969;
+    background-image: url(../img/infiltrator.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: .5em auto 1em;
+    background: var(--clr-light);
+    opacity : .25;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    /* .services {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    } */
+
+    .services {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+        
+    .service:nth-child(1) {
+        width: calc(100% / 3 * 1);
+    }
+    
+    .service:nth-child(2) {
+        width: calc(100% / 3 * 1);
+    }
+    
+    .service:nth-child(3) {
+        width: calc(100% / 3 * 1);
+    }
+    
+    .service + .service {
+        margin-left: 2.11em;
     }
 }
