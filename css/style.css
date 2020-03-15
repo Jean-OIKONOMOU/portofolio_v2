@@ -49,12 +49,7 @@ html {
 }
 
 body {
-    /* fallback for old browsers */
-    background: #348F50;
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to top, #56B4D3, var(--clr-accent));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to top, #56B4D3, var(--clr-accent));
+    background: var(--clr-accent);
     color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-primary);
@@ -66,6 +61,7 @@ body {
 main {
     background: var(--clr-dark);
     margin: 0 5.5% 2% 5.5%;
+    padding-top: 2%;
 }
 
 @media (max-width: 600px) {
@@ -97,7 +93,6 @@ img {
 }
 
 .btn {
-    /* margin-top: 1.5em; */
     display: inline-block;
     padding: 7px 30px;
     background: var(--clr-accent);
@@ -229,6 +224,13 @@ header {
     padding: .5em;
     cursor: pointer;
     z-index: 1000;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
 }
 
 .nav-toggle:focus {
@@ -238,7 +240,7 @@ header {
 
 .nav-open {
     overflow-y: hidden;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 .nav-open .nav {
@@ -515,4 +517,15 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#myHeader {
+    background-color: var(--clr-accent);
+    z-index: 9999;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
