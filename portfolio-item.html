@@ -20,14 +20,10 @@
     main {
         flex: 1 0 auto;
     }
-    
-    .footer {
-        flex-shrink: 0;
-    }
 </style>
 
 <body>
-    <header>
+    <header id="myHeader">
         <div class="logo">
             <img src="img/dev.svg" alt="hullo">
         </div>
@@ -64,24 +60,22 @@
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
                 book. It has survived not only five centuries, but also the l</p>
         </div>
-
+        <section class="footer" id="contact">
+            <a href="mailto:jean.oikonomou@gmail.com?body=Greetings%20dear%20Jean%20Adrian%20OIKONOMOU,&subject=Getting%20in%20touch" class="footer__link cool-link" target="_blank">Jean.oikonomou@gmail.com</a>
+            <ul class="footer__social-list">
+                <li class="social-list__item">
+                    <a href="https://github.com/Jean-OIKONOMOU" target="_blank" class="social-list__link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://www.linkedin.com/in/jean-adrian-oikonomou/" target="_blank" class="social-list__link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
     </main>
-
-    <footer class="footer" id="contact">
-        <a href="mailto:jean.oikonomou@gmail.com?body=Greetings%20dear%20Jean%20Adrian%20OIKONOMOU,&subject=Getting%20in%20touch" class="footer__link" target="_blank">Jean.oikonomou@gmail.com</a>
-        <ul class="footer__social-list">
-            <li class="social-list__item">
-                <a href="https://github.com/Jean-OIKONOMOU" target="_blank" class="social-list__link">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a href="https://www.linkedin.com/in/jean-adrian-oikonomou/" target="_blank" class="social-list__link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
 
     <script src="js/index.js"></script>
 </body>

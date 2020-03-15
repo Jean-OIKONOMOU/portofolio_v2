@@ -18,7 +18,8 @@
     --fw-bold: 900;
     --clr-light: #ffffff;
     --clr-dark: #1d1c19;
-    --clr-accent: #16e0bd;
+    /* --clr-accent: #16e0bd; */
+    --clr-accent: #119982;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -60,8 +61,8 @@ body {
 
 main {
     background: var(--clr-dark);
-    margin: 0 5.5% 2% 5.5%;
-    padding-top: 2%;
+    margin: 0 7.5% 5.5% 7.5%;
+    padding-top: .25%;
 }
 
 @media (max-width: 600px) {
@@ -491,6 +492,7 @@ header {
 .footer__link:hover,
 .social-list__link:hover {
     opacity: .8;
+    transition: all 285ms cubic-bezier(.5, 0, .5, 1);
 }
 
 .footer__social-list {
@@ -528,4 +530,24 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
+}
+
+.cool-link {
+    display: inline-block;
+    color: var(--clr-accent);
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--clr-accent);
+    transition: all 285ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
 }
