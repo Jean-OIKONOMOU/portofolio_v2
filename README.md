@@ -15,7 +15,7 @@ Here's the tiny version : http://tiny.cc/l0jclz
 
 And here's the QR code in case you want to share it via a picture : 
 
-![](img/QR.png =222x222)
+<img src="img/QR.png" alt="drawing" width="222" height="222"/>
 
 # Why not directly do a portofolio in React/Next then ?
 Because :
