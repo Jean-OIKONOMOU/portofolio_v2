@@ -10,6 +10,13 @@ It'll be hosted on Netlify and Github pages.
 - [Netlify](https://festive-sinoussi-9f090b.netlify.com/)
 - [Github-pages](https://jean-oikonomou.github.io/portofolio_v2/)
 
+# That's a rather unpleasant URL !
+Here's the tiny version : http://tiny.cc/l0jclz
+
+And here's the QR code in case you want to share it via a picture : 
+
+![](img/QR.png)
+
 # Why not directly do a portofolio in React/Next then ?
 Because :
 - I want to have a quick recap of HTML/CSS/JS.
