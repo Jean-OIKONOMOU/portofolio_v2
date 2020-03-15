@@ -7,6 +7,9 @@ This time I won't use any external libraries. Only HTML/CSS/JS (I will be using 
 # Will this site really be hosted or will it stay as a github page only ?
 It'll be hosted on Netlify and Github pages.
 
+- [Netlify](https://festive-sinoussi-9f090b.netlify.com/)
+- [Github-pages](https://jean-oikonomou.github.io/portofolio_v2/)
+
 # Why not directly do a portofolio in React/Next then ?
 Because :
 - I want to have a quick recap of HTML/CSS/JS.
