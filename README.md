@@ -2,7 +2,10 @@
 This is my second attempt at making a portofolio. My first attempt was during my early days as a web developer (when I was still at BeCode). You can see my old portofolio on my github or on this link :
 https://jean-oikonomou.github.io/PORTOFOLIO/
 
-This time I won't use any external libraries. Only HTML/CSS/JS. This is a first attempt before making my portofolio using React / Next and some other surprises :)
+This time I won't use any external libraries. Only HTML/CSS/JS (I will be using Google Fonts and Fontawesome though). This is a first attempt before making my portofolio using React / Next and some other surprises :)
+
+# Will this site really be hosted or will it stay as a github page only ?
+It'll be hosted on Netlify and Github pages.
 
 # Why not directly do a portofolio in React/Next then ?
 Because :
