@@ -19,7 +19,7 @@
     --clr-light: #ffffff;
     --clr-dark: #1d1c19;
     --clr-darker: #0e0d0c;
-    --clr-accent: #119982;
+    --clr-accent: #15b69b;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -224,11 +224,12 @@ header {
     background: transparent;
     border: 0;
     padding: .5em;
+    height: 2em;
     cursor: pointer;
     z-index: 1000;
     position: absolute;
     right: 1em;
-    top: 1em;
+    top: .5em;
 }
 
 .nav-open .nav-toggle {
