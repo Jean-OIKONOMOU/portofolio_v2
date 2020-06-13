@@ -24,3 +24,14 @@ function myFunction() {
         header.classList.remove("sticky");
     }
 }
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("myHeader").style.marginTop  = "0";
+  } else {
+    document.getElementById("myHeader").style.marginTop  = "-55px";
+  }
+  prevScrollpos = currentScrollPos;
+}
