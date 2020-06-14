@@ -29,9 +29,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("myHeader").style.marginTop  = "0";
+    document.getElementById("myHeader").style.top  = "0";
   } else {
-    document.getElementById("myHeader").style.marginTop  = "-55px";
+    document.getElementById("myHeader").style.top  = "-68px";
   }
   prevScrollpos = currentScrollPos;
 }
